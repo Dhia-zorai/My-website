@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--<ul class="list2">
+        <li class="li2"><a href="https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PORJECT%20KAPREKAR%20NUMBERS" target="_blank">PORJECT KAPREKAR NUMBERS</a></li>
+        <li class="li2"><a href="https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PROJECT%20BANKING%20ACCOUNT%20PASSWORD%20GENERATOR" target="_blank">PROJECT BANK ACCOUNT PASSWORD GENERATOR</a></li>
+        <li class="li2"><a href="https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PROJECT%20CODE%20VALIDATOR" target="_blank">PROJECT CODE VALIDATOR</a></li>
+        <li class="li2"><a href="https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PROJECT%20EAN%2013" target="_blank">PORJECT EAN 13</a></li>
+        <li class="li2"><a href="https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PROJECT%20GCD%20AND%20LCM%20CALCULATOR" target="_blank">PORJECT GCD AND LCM</a></li>
+        <li class="li2"><a href="https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PROJECT%20GIVEAWAY%20DRAW" target="_blank">PORJECT GIVEAWAY DRAW</a></li>
+        <li class="li2"><a href="https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PROJECT%20IMEI%20CHECKER" target="_blank">PORJECT IMEI CHECKER</a></li>
+        <li class="li2"><a href="https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PROJECT%20PASSWORD%20GENERATOR%20(GUI)" target="_blank">PROJECT PASSWORD GENERATOR (GUI)</a></li>
+        <li class="li2"><a href="https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PROJECT%20PRIME%20NUMBERS%20(GUI)" target="_blank">PORJECT PRIME NUMBERS (GUI)</a></li>
+        <li class="li2"><a href="https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PROJECTS%20WORD%20ALPHABETICAL%20SORTER" target="_blank">PORJECT ALPHABETICAL SORTER</a></li>
+        
+    </ul>-->
+    <ul class="list2" id="projects-list"></ul>
+
+<script>
+    const projects = [
+        { name: "PROJECT KAPREKAR NUMBERS", link: "https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PORJECT%20KAPREKAR%20NUMBERS" },
+        { name: "PROJECT BANK ACCOUNT PASSWORD GENERATOR", link: "https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PROJECT%20BANKING%20ACCOUNT%20PASSWORD%20GENERATOR" },
+        { name: "PROJECT CODE VALIDATOR", link: "https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PROJECT%20CODE%20VALIDATOR" },
+        { name: "PROJECT EAN 13", link: "https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PROJECT%20EAN%2013" },
+        { name: "PROJECT GCD AND LCM", link: "https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PROJECT%20GCD%20AND%20LCM%20CALCULATOR" },
+        { name: "PROJECT GIVEAWAY DRAW", link: "https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PROJECT%20GIVEAWAY%20DRAW" },
+        { name: "PROJECT IMEI CHECKER", link: "https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PROJECT%20IMEI%20CHECKER" },
+        { name: "PROJECT PASSWORD GENERATOR (GUI)", link: "https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PROJECT%20PASSWORD%20GENERATOR%20(GUI)" },
+        { name: "PROJECT PRIME NUMBERS (GUI)", link: "https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PROJECT%20PRIME%20NUMBERS%20(GUI)" },
+        { name: "PROJECT ALPHABETICAL SORTER", link: "https://github.com/Dhia-zorai/Dhia-z-PYTHON-repo/tree/main/PROJECTS%20WORD%20ALPHABETICAL%20SORTER" }
+    ];
+
+    const list = document.getElementById('projects-list');
+    projects.forEach(project => {
+        const li = document.createElement('li');
+        li.classList.add('li2');
+        li.innerHTML = `<a href="${project.link}" target="_blank">${project.name}</a>`;
+        list.appendChild(li);
+    });
+</script>
+</body>
+</html>

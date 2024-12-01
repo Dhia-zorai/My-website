@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--<ul class="list2">
+        <li class="li2"><a href="https://github.com/Dhia-zorai/Dhia-z-web-repo/tree/main/FIFA%20WORLD%20CUP%20SITE" target="_blank">FIFA WORLD CUP SITE</a></li>
+        <li class="li2"><a href="https://github.com/Dhia-zorai/Dhia-z-web-repo/tree/main/PROJECT1" target="_blank">PROJECT1</a></li>
+        <li class="li2"><a href="https://github.com/Dhia-zorai/Dhia-z-web-repo/tree/main/PROJECT2" target="_blank">PROJECT2</a></li>
+        <li class="li2"><a href="">PORJECT3</a></li>
+        <li class="li2"><a href="https://github.com/Dhia-zorai/Dhia-z-web-repo/tree/main/PROJECT4" target="_blank">PORJECT4</a></li>
+        <li class="li2"><a href="https://github.com/Dhia-zorai/Dhia-z-web-repo/tree/main/PROJECT5" target="_blank">PORJECT5</a></li>
+        <li class="li2"><a href="https://github.com/Dhia-zorai/Dhia-z-web-repo/tree/main/PROJECT6" target="_blank">PORJECT6</a></li>  
+        
+    
+    </ul>-->
+    <ul class="list2" id="projects-list"></ul>
+    <script>
+        const projects = [
+            { name: "FIFA WORLD CUP SITE", link: "https://github.com/Dhia-zorai/Dhia-z-web-repo/tree/main/FIFA%20WORLD%20CUP%20SITE" },
+            { name: "PROJECT1", link: "https://github.com/Dhia-zorai/Dhia-z-web-repo/tree/main/PROJECT1" },
+            { name: "PROJECT2", link: "https://github.com/Dhia-zorai/Dhia-z-web-repo/tree/main/PROJECT2" },
+            { name: "PROJECT3", link: "" },
+            { name: "PROJECT4", link: "https://github.com/Dhia-zorai/Dhia-z-web-repo/tree/main/PROJECT4" },
+            { name: "PROJECT5", link: "https://github.com/Dhia-zorai/Dhia-z-web-repo/tree/main/PROJECT5" },
+            { name: "PROJECT6", link: "https://github.com/Dhia-zorai/Dhia-z-web-repo/tree/main/PROJECT6" }
+        ];
+
+        const list = document.getElementById('projects-list');
+        projects.forEach(project => {
+            const li = document.createElement('li');
+            li.classList.add('li2');
+            li.innerHTML = `<a href="${project.link || '#'}" target="_blank">${project.name}</a>`; 
+            list.appendChild(li);
+        });
+    </script>
+    </script>
+</body>
+</html>
