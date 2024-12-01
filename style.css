@@ -142,6 +142,60 @@ footer{
     
 }
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    #p1 {
+        font-size: 40px;
+    }
+
+    section,
+    aside {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    #ifr1, #ifr2, #ifr3, #ifr4 {
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    a {
+        font-size: 18px;
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    #p1 {
+        font-size: 30px;
+    }
+
+    a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    footer {
+        margin-top: 30%;
+    }
+}
+
 /*Weather App*/
 
 #weather-bod{
