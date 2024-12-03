@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>GitHub Repo</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,10 +13,22 @@
         <p id="p1">Here you can explore my collection of personal projects and repositories</p>
     </header>
     <main>
-        <nav>
-            <iframe src="menu.html" id="ifr1"  frameborder="0"></iframe>
+    
+    <nav>
+        
+        <div class="hamburger" id="hamburger-menu">&#9776;
             
-        </nav>
+        </div>
+        <ul class="list1" id="nav-list">
+            
+            <li class="li1"><a href="about.html" target="ifr2">About Me</a></li>
+            <li class="li1"><a href="web.html" target="ifr2">HTML+CSS+JavaScript+PHP+SQL repo</a></li>
+            <li class="li1"><a href="python.html" target="ifr2">Python repo</a></li>
+            <li class="li1"><a href="cpp.html" target="ifr2">C repo</a></li>
+            
+        </ul>
+        <label for="menu" id="menu">Click here for Menu</label>
+    </nav> 
         
         <section>
             <iframe src="about.html" id="ifr2" name="ifr2" frameborder="0"></iframe>
@@ -34,5 +47,31 @@
         <cite id="cite1">Desinged & developped by : Dhia Zorai</cite>
         <p><a href="https://github.com/Dhia-zorai">Full GitHub Page</a></p>
     </footer>
+    <script>
+        
+    const hamburger = document.getElementById('hamburger-menu');
+    const navList = document.getElementById('nav-list');
+
+    
+    hamburger.addEventListener('click', () => {
+    navList.classList.toggle('active');});
+
+    navList.addEventListener('click', (event) => {
+    
+    if (event.target === navList) {
+        navList.classList.remove('active');
+    }
+});
+
+const navLinks = document.querySelectorAll('#nav-list a');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navList.classList.remove('active');
+    });
+});
+
+
+
+    </script>
 </body>
 </html>
